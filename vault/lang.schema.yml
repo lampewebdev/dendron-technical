@@ -1,0 +1,15 @@
+version: 1
+imports: []
+schemas:
+  - id: lang
+    parent: root
+    title: language
+    children:
+      - pattern: rust
+      - pattern: javascript
+      - pattern: typescript
+      - pattern: "*"
+        children:
+          - pattern: docs
+          - pattern: libs
+          - pattern: releases

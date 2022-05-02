@@ -1,0 +1,13 @@
+version: 1
+imports: []
+schemas:
+  - id: framework
+    parent: root
+    title: framework
+    children:
+      - pattern: vue
+      - pattern: react
+      - pattern: "*"
+        children:
+          - pattern: docs
+          - pattern: releases
