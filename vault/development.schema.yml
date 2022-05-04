@@ -1,0 +1,10 @@
+version: 1
+imports: []
+schemas: 
+  - id: development
+    parent: root
+    title: development
+    children: 
+      - pattern: release
+        children: 
+          - pattern: semantic-release
